@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <h1> Application Form</h1>
+    <p>Please fill out this form with the required information
+    </p>
+    <form action="https://careermart.co.ke/apply">
+    <fieldset>
+        <label>Enter Your First Name: <input type="text" required></label>
+        <label>Enter Your Second Name: <input type="text" required></label>
+        <label>Enter Your Email: <input type="email" required></label>
+        <label>Create New Password: <input type="password" required  pattern="[a-z0-5]{6,}"></label>
+    
+    </fieldset>
+    <fieldset>
+            <label> <input class="inline" type="radio" name="account-type"> Job seeker </label> 
+            <label><input class="inline" type="radio" name="account-type"> Employer</label>
+    </fieldset>
+       <fieldset>
+        <label> Select job category<select>
+            <option value="1">Hr and Aministration</option>
+            <option value="2">Information Technology</option>
+            <option value="3">Medical and Health</option>
+            <option value="4"> Sales and Marketing</option>
+            <option value="5">NGO</option>
+            <option value="6">Government jobs</option>
+        </select></label>
+<label> Upload your Resume/Job Details here: <input type="file"></label>      
+    </fieldset>
+    <label> <input class="inline" type="checkbox"> I accept that i have read the <a href="https://careermart.co.ke/privacy-policy-2">Terms and Conditions</a></label>
+    <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>
